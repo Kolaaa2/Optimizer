@@ -569,56 +569,12 @@ function AnalyzerResult({data}){
 }
 
 /* ─────────────────────────────────────────
-   FASE 4: BADGE GENERATOR
-───────────────────────────────────────── */
-function BadgeGenerator(){
-  const [style, setStyle] = useState("flat");
-  const [color, setColor] = useState("22c55e");
-  const badges = [
-    `https://img.shields.io/badge/Optimized_with-Ghaizers2.0-${color}?style=${style}&logo=minecraft`,
-    `https://img.shields.io/badge/Pack_Optimizer-Ghaizers2.0-${color}?style=${style}`,
-    `https://img.shields.io/badge/🎮_Optimized-Ghaizers.ghaa.my.id-${color}?style=${style}`,
-  ];
-  return (
-    <div>
-      <div style={{display:"flex",gap:10,marginBottom:16,flexWrap:"wrap",alignItems:"center"}}>
-        <div>
-          <div style={{fontSize:11,color:"var(--text-muted)",marginBottom:4}}>Style</div>
-          <select value={style} onChange={e=>setStyle(e.target.value)}
-            style={{background:"var(--surface3)",border:"1px solid var(--border)",color:"var(--text)",borderRadius:6,padding:"6px 10px",fontSize:12,fontFamily:"var(--font-body)"}}>
-            {["flat","flat-square","for-the-badge","plastic","social"].map(s=><option key={s} value={s}>{s}</option>)}
-          </select>
-        </div>
-        <div>
-          <div style={{fontSize:11,color:"var(--text-muted)",marginBottom:4}}>Color (hex)</div>
-          <input value={color} onChange={e=>setColor(e.target.value.replace("#",""))}
-            style={{background:"var(--surface3)",border:"1px solid var(--border)",color:"var(--text)",borderRadius:6,padding:"6px 10px",fontSize:12,width:100,fontFamily:"var(--font-mono)"}}
-            maxLength={6} placeholder="22c55e"/>
-        </div>
-      </div>
-      {badges.map((url,i)=>(
-        <div key={i} style={{background:"var(--surface2)",borderRadius:10,padding:14,marginBottom:10,border:"1px solid var(--border)"}}>
-          <img src={url} alt="badge" style={{height:24,marginBottom:10,display:"block"}} onError={e=>e.target.style.opacity="0.3"}/>
-          <div style={{display:"flex",gap:8,flexWrap:"wrap"}}>
-            <code style={{fontSize:10,flex:1,wordBreak:"break-all",color:"var(--text-dim)"}}>{url}</code>
-            <button onClick={()=>navigator.clipboard?.writeText(`![Optimized with Ghaizers](${url})`)}
-              className="preset-btn" style={{fontSize:10,padding:"3px 10px",flexShrink:0}}>
-              Copy MD
-            </button>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-/* ─────────────────────────────────────────
    FASE 4: SHARE RESULTS
 ───────────────────────────────────────── */
 function ShareResults({summary}){
   if(!summary) return null;
   const savings = (((summary.originalSize-summary.optimizedSize)/summary.originalSize)*100).toFixed(1);
-  const text = `✨ Resource pack Minecraft aku berhasil dioptimasi ${savings}% lebih kecil!\n${(summary.originalSize/1e6).toFixed(2)}MB → ${(summary.optimizedSize/1e6).toFixed(2)}MB\nPake tool gratis Ghaizers2.0 → optimizer.ghaa.my.id`;
+  const text = `✨ Resource pack Minecraft aku berhasil dioptimasi ${savings}% lebih kecil!\n${(summary.originalSize/1e6).toFixed(2)}MB → ${(summary.optimizedSize/1e6).toFixed(2)}MB`;
   const waUrl = `https://wa.me/?text=${encodeURIComponent(text)}`;
   const twUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
   return (
@@ -664,7 +620,7 @@ function DocsPage(){
     <div style={{maxWidth:720,margin:"0 auto",padding:"24px 0"}}>
       <h2 style={{fontFamily:"var(--font-pixel)",fontSize:14,color:"var(--green)",marginBottom:24}}>📚 DOKUMENTASI</h2>
       {[
-        {title:"🖼️ PNG Optimization",content:"Ghaizers menggunakan beberapa teknik untuk PNG:\n\n• Smart Resize: Scale texture berdasarkan mode yang dipilih, dengan kategori policy per folder (GUI, font, entity, particle)\n• Alpha Pixel Cleanup: Zero-out RGB pada pixel fully transparent (alpha=0). Tidak ada perubahan visual, tapi entropy PNG turun dan ZIP menjadi lebih kecil\n• Single-Color Detection: Deteksi PNG yang semua pixelnya identik warna → resize ke 1×1px\n• Power-of-Two: Snap ukuran ke dimensi 2^n terdekat (16,32,64...) untuk GPU efficiency\n• Size Guard: Jika hasil resize lebih besar dari original, file asli digunakan"},
+        {title:"🖼️ PNG Optimization",content:"Optimizer menggunakan beberapa teknik untuk PNG:\n\n• Smart Resize: Scale texture berdasarkan mode yang dipilih, dengan kategori policy per folder (GUI, font, entity, particle)\n• Alpha Pixel Cleanup: Zero-out RGB pada pixel fully transparent (alpha=0). Tidak ada perubahan visual, tapi entropy PNG turun dan ZIP menjadi lebih kecil\n• Single-Color Detection: Deteksi PNG yang semua pixelnya identik warna → resize ke 1×1px\n• Power-of-Two: Snap ukuran ke dimensi 2^n terdekat (16,32,64...) untuk GPU efficiency\n• Size Guard: Jika hasil resize lebih besar dari original, file asli digunakan"},
         {title:"📄 JSON Optimization",content:"• JSON Minify: Hapus semua whitespace dan newline yang tidak diperlukan Minecraft\n• Deep Clean: Hapus field comment (__comment, _comment, //) yang dibuat Blockbench dan tool lain\n• Key Sorting: Sort keys alphabetically untuk better DEFLATE compression\n• Sounds.json: Hapus entry dengan array sounds kosong\n• .mcmeta: Edit langsung di interface, credit ghaa otomatis diinjeksi"},
         {title:"🔊 OGG Optimization",content:"OGG optimization di Ghaizers adalah 100% lossless:\n• Strip ID3 header (metadata ID3v2 di awal file)\n• Strip ID3v1 tag (128 bytes di akhir file)\n• Trim null padding\n\nKualitas audio dijamin sama persis karena tidak ada re-encoding."},
         {title:"⚡ Web Workers",content:"Resize PNG adalah operasi CPU-intensive. Tanpa Workers, browser akan freeze.\n\nGhaizers membuat worker pool dengan ukuran: Math.floor(hardwareConcurrency/2), minimum 2, maximum 4.\n\nSetiap worker menggunakan OffscreenCanvas API untuk resize tanpa block main thread. Buffer dikirim sebagai Transferable Objects (zero-copy)."},
