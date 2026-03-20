@@ -14,7 +14,7 @@
 
 <br/>
 
-[![Made by kolaa](https://img.shields.io/badge/Made_by-kolaa-16a34a?style=for-the-badge&logo=github)](https://github.com/Kolaa2)
+[![Made by kolaa](https://img.shields.io/badge/Made_by-kolaaa-16a34a?style=for-the-badge&logo=github)](https://github.com/Kolaaa2)
 [![License](https://img.shields.io/badge/License-Free_Forever-f59e0b?style=for-the-badge)](#)
 [![Status](https://img.shields.io/badge/Status-Live_✔-22c55e?style=for-the-badge)](#)
 
@@ -428,11 +428,11 @@ Laporkan ke: [-](-)
 
 <div align="center">
 
-<img src="https://github.com/Kolaa2.png" width="100" style="border-radius: 50%" alt="ghaa"/>
+<img src="https://github.com/Kolaaa2.png" width="100" style="border-radius: 50%" alt="ghaa"/>
 
 ### ghaa (KhaizenNomazen)
 
-[![GitHub](https://img.shields.io/badge/GitHub-Kolaa2-181717?style=for-the-badge&logo=github)](https://github.com/Kolaa2)
+[![GitHub](https://img.shields.io/badge/GitHub-Kolaaa2-181717?style=for-the-badge&logo=github)](https://github.com/Kolaaa2)
 [![Optimizer](https://img.shields.io/badge/Tool-optimizer-mghm.vercel.app/-16a34a?style=for-the-badge&logo=minecraft)](https://optimizer-mghm.vercel.app/)
 
 *Minecraft server developer & resource pack tooling enthusiast 🎮*
