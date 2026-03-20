@@ -14,8 +14,7 @@
 
 <br/>
 
-[![Website](https://img.shields.io/badge/🌐_Website-optimizer.ghaa.my.id-22c55e?style=for-the-badge)](https://optimizer.ghaa.my.id)
-[![Made by ghaa](https://img.shields.io/badge/Made_by-ghaa_(KhaizenNomazen)-16a34a?style=for-the-badge&logo=github)](https://github.com/KhaizenNomazen)
+[![Made by kolaa](https://img.shields.io/badge/Made_by-kolaa-16a34a?style=for-the-badge&logo=github)](https://github.com/Kolaa2)
 [![License](https://img.shields.io/badge/License-Free_Forever-f59e0b?style=for-the-badge)](#)
 [![Status](https://img.shields.io/badge/Status-Live_✔-22c55e?style=for-the-badge)](#)
 
@@ -29,7 +28,7 @@
 
 <br/>
 
-> **Tool gratis untuk mengoptimasi resource pack Minecraft.**
+> **Tool untuk mengoptimasi resource pack Minecraft.**
 > Kompres PNG, minify JSON, optimize OGG — semuanya di browser kamu, tanpa upload ke server.
 > Dibuat khusus untuk komunitas Minecraft Indonesia 🇮🇩
 
@@ -48,7 +47,6 @@
 - [🔬 Teknik Optimasi](#-teknik-optimasi)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [📁 Struktur Project](#-struktur-project)
-- [💻 Development](#-development)
 - [⚖️ Legal & Lisensi](#️-legal--lisensi)
 - [👤 Author](#-author)
 
@@ -110,7 +108,7 @@
 
 <div align="center">
 
-### 🌐 [optimizer.ghaa.my.id](https://optimizer.ghaa.my.id)
+### 🌐 [optimizer-mghm.vercel.app](https://optimizer-mghm.vercel.app/)
 
 | Step | Aksi |
 |------|------|
@@ -129,7 +127,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    GHAIZERS 2.0 PIPELINE                    │
+│                    OPTIMIZER 1.0 PIPELINE                    │
 └─────────────────────────────────────────────────────────────┘
 
   📦 Input ZIP
@@ -361,44 +359,6 @@ ghaizers2.0/
 
 ---
 
-## 💻 Development
-
-### Prerequisites
-- Node.js 18+
-- npm atau yarn
-
-### Install & Run
-
-```bash
-# Clone repo
-git clone https://github.com/KhaizenNomazen/ghaizers2.0.git
-cd ghaizers2.0
-
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-```
-
-Buka [http://localhost:3000](http://localhost:3000)
-
-### Build & Deploy
-
-```bash
-# Build production
-npm run build
-
-# Deploy ke Vercel (otomatis via GitHub push)
-git push origin main
-```
-
-### Environment Variables
-
-```env
-# Tidak diperlukan untuk versi tanpa CAPTCHA
-# .env.local (opsional)
-```
 
 ---
 
@@ -437,11 +397,10 @@ git push origin main
 ║                    ⚠️  PERINGATAN HUKUM                      ║
 ╠══════════════════════════════════════════════════════════════╣
 ║                                                              ║
-║  Tool ini adalah KARYA CIPTA ghaa (KhaizenNomazen)           ║
+║  Tool ini adalah KARYA CIPTA Kolaa.                          ║
 ║                                                              ║
 ║  ✅ DIIZINKAN:                                               ║
-║     • Penggunaan pribadi — GRATIS                            ║
-║     • Komunitas / server non-komersial — GRATIS              ║
+║     • Penggunaan pribadi — BAYAR                             ║ 
 ║     • Fork & modifikasi dengan tetap mencantumkan credit     ║
 ║                                                              ║
 ║  ❌ DILARANG KERAS:                                          ║
@@ -450,16 +409,16 @@ git push origin main
 ║     • Mengklaim sebagai karya sendiri                        ║
 ║                                                              ║
 ║  Pelanggaran dapat dituntut berdasarkan:                     ║
-║  🇮🇩 UU Hak Cipta No. 28 Tahun 2014                          ║
-║  🌍 Berne Convention (Internasional)                          ║
-║  🌍 WIPO Copyright Treaty                                     ║
+║  🇮🇩 UU Hak Cipta No. 28 Tahun 2014                           ║
+║  🌍 Berne Convention (Internasional)                         ║
+║  🌍 WIPO Copyright Treaty                                    ║
 ║                                                              ║
 ║  Pidana: max 10 tahun | Denda: max Rp 4.000.000.000          ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
-**Jika kamu MEMBAYAR untuk tool ini → kamu DITIPU!**
-Laporkan ke: [github.com/KhaizenNomazen](https://github.com/KhaizenNomazen)
+**Jika kamu MEMBELI untuk tool ini bukan dari KOLAA, segera lapor!**
+Laporkan ke: [-](-)
 
 </div>
 
@@ -469,16 +428,14 @@ Laporkan ke: [github.com/KhaizenNomazen](https://github.com/KhaizenNomazen)
 
 <div align="center">
 
-<img src="https://github.com/KhaizenNomazen.png" width="100" style="border-radius: 50%" alt="ghaa"/>
+<img src="https://github.com/Kolaa2.png" width="100" style="border-radius: 50%" alt="ghaa"/>
 
 ### ghaa (KhaizenNomazen)
 
-[![GitHub](https://img.shields.io/badge/GitHub-KhaizenNomazen-181717?style=for-the-badge&logo=github)](https://github.com/KhaizenNomazen)
-[![Website](https://img.shields.io/badge/Website-ghaa.my.id-22c55e?style=for-the-badge&logo=globe)](https://ghaa.my.id)
-[![Optimizer](https://img.shields.io/badge/Tool-optimizer.ghaa.my.id-16a34a?style=for-the-badge&logo=minecraft)](https://optimizer.ghaa.my.id)
+[![GitHub](https://img.shields.io/badge/GitHub-Kolaa2-181717?style=for-the-badge&logo=github)](https://github.com/Kolaa2)
+[![Optimizer](https://img.shields.io/badge/Tool-optimizer-mghm.vercel.app/-16a34a?style=for-the-badge&logo=minecraft)](https://optimizer-mghm.vercel.app/)
 
 *Minecraft server developer & resource pack tooling enthusiast 🎮*
-*NusaLife Server — Indonesia 🇮🇩*
 
 </div>
 
@@ -498,7 +455,7 @@ Kalau tool ini membantu kamu, please:
 <div align="center">
 
 ```
-Made with 💚 by ghaa (KhaizenNomazen)
+Made by Kolaa
 Tool ini GRATIS selamanya — untuk komunitas Minecraft Indonesia 🇮🇩
 ```
 
@@ -615,7 +572,7 @@ Buffer dikirim sebagai **Transferable Objects** — zero copy, tidak ada duplika
 ### Output
 
 Setelah semua file selesai:
-- 2 file credit diinjeksi (`GHAIZERS_CREDIT.txt`, `JANGAN_BAYAR_INI.txt`)
+- 2 file credit diinjeksi (`KOLAA_CREDIT.txt`)
 - ZIP di-generate dengan DEFLATE level 1–9
 - SHA-1 hash dihitung untuk verifikasi integritas
-- File langsung ke-download otomatis sebagai `optimize_file.zip`
+- File langsung ke-download otomatis sebagai `file_optimize.zip`
