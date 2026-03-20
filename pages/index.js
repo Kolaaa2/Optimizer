@@ -7,21 +7,21 @@ import JSZip from "jszip";
 ───────────────────────────────────────── */
 const CREDIT_BANNER = [
   "╔══════════════════════════════════════════════════╗",
-  "║     Ghaizers2.0 — Minecraft Pack Optimizer       ║",
-  "║     Made with 💚 by ghaa (KhaizenNomazen)        ║",
+  "║     Optimizer1.0— Minecraft Pack Optimizer       ║",
+  "║     Made by kolaa                                ║",
   "║     Tool ini 100% GRATIS — JANGAN DIBAYAR!       ║",
   "║     UU Hak Cipta No. 28 Tahun 2014 (Indonesia)   ║",
-  "║     github.com/KhaizenNomazen                    ║",
+  "║     github.com/Kolaaa2                           ║",
   "╚══════════════════════════════════════════════════╝",
 ];
 const CREDIT_TXT = `================================================================
-  GHAIZERS 2.0 — Minecraft Resource Pack Optimizer
-  © 2025 ghaa (KhaizenNomazen). All rights reserved.
+  Optimizer 1.0 — Minecraft Resource Pack Optimizer
+  © 2025 Kolaa (Kolaaa2). All rights reserved.
 ================================================================
 Tool ini GRATIS. Menjual = pelanggaran UU Hak Cipta No.28/2014.
-Lapor: github.com/KhaizenNomazen
+Lapor: github.com/Kolaaa2
 ================================================================`;
-const CREDIT_MCMETA_DESC = "§cDilarang Dijual! §r| Optimizer by §aghaa §7(KhaizenNomazen) | §eGRATIS di optimizer.ghaa.my.id";
+const CREDIT_MCMETA_DESC = "§cDilarang Dijual! §r| Optimizer by §akolaa §7(OwTennnn)";
 
 /* ─────────────────────────────────────────
    MODES
@@ -1017,16 +1017,16 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Minecraft Resource Pack Optimizer Gratis – Ghaizers2.0</title>
-        <meta name="description" content="Optimize resource pack Minecraft gratis. Kompres PNG, JSON, OGG tanpa kehilangan kualitas. Cocok Pojav, HP low-end, Bedrock. 100% client-side." />
+        <title>Minecraft Resource Pack Optimizer – Optimizer 1.0</title>
+        <meta name="description" content="Optimize resource pack Minecraft. Kompres PNG, JSON, OGG tanpa kehilangan kualitas. Cocok Pojav, HP low-end, Bedrock. 100% client-side." />
         <meta name="keywords" content="optimize resource pack minecraft, minecraft pack optimizer, kompres texture pack, pojav launcher resource pack ringan, ghaizers" />
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="https://optimizer.ghaa.my.id"/>
-        <meta property="og:title" content="Minecraft Resource Pack Optimizer Gratis – Ghaizers2.0"/>
-        <meta property="og:description" content="Tool gratis optimize resource pack Minecraft. PNG, JSON, OGG. Cocok Pojav & low-end."/>
+        <meta property="og:url" content=""/>
+        <meta property="og:title" content="Minecraft Resource Pack Optimizer – Optimizer 1.0"/>
+        <meta property="og:description" content="Tool optimize resource pack Minecraft. PNG, JSON, OGG. Cocok Pojav & low-end."/>
         <meta name="robots" content="index, follow"/>
         <link rel="canonical" href="https://optimizer.ghaa.my.id"/>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Ghaizers2.0","url":"https://optimizer.ghaa.my.id","description":"Tool gratis optimize resource pack Minecraft","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"IDR"},"author":{"@type":"Person","name":"ghaa (KhaizenNomazen)","url":"https://github.com/KhaizenNomazen"}})}}/>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"WebApplication","name":"Optimizer 1.0","url":"","description":"Tool optimize resource pack Minecraft","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"IDR"},"author":{"@type":"Person","name":"kolaa (OwTennnn)","url":"https://github.com/Kolaaa2"}})}}/>
       </Head>
 
       {/* Background */}
@@ -1038,14 +1038,14 @@ export default function Home() {
       <div className="page-root">
         {/* Watermark */}
         <div className="watermark-bar">
-          ⚠️ Tool ini 100% GRATIS oleh <strong>ghaa</strong> — Jika kamu membayar, kamu DITIPU! &nbsp;|&nbsp;
-          <a href="https://github.com/KhaizenNomazen" target="_blank" rel="noopener noreferrer">github.com/KhaizenNomazen</a>
+          ⚠️ Tool ini dibuat oleh <strong>Kolaa</strong> — Beli toll langsung dari Kolaa! &nbsp;|&nbsp;
+          <a href="https://github.com/Kolaaa2" target="_blank" rel="noopener noreferrer">github.com/Kolaaa2</a>
         </div>
 
         {/* Navbar */}
         <nav className="navbar">
           <div className="navbar-logo" onClick={()=>setCurrentPage("home")} style={{cursor:"pointer"}}>
-            <div className="navbar-logo-dot"/>GHAIZERS
+            <div className="navbar-logo-dot"/>Optimizer
           </div>
           <div className="navbar-links">
             {[["home","🏠"],["docs","📚 Docs"],["faq","❓ FAQ"],["changelog","📋 Log"]].map(([page,label])=>(
@@ -1083,7 +1083,7 @@ export default function Home() {
             <div className="hero-eyebrow">⚡ MINECRAFT PACK OPTIMIZER</div>
             <h1 className="hero-title">
               Optimize <span className="accent">Resource Pack</span><br/>
-              Minecraft Kamu <span className="gold">Gratis</span>
+              Minecraft Kamu <span className="gold">Bayar</span>
             </h1>
             <p className="hero-sub">Kompres PNG, minify JSON, optimize OGG — semua di browser kamu, tanpa upload ke server. Cocok untuk Pojav Launcher, HP low-end, dan Bedrock.</p>
             <div className="hero-cta-row">
@@ -1429,16 +1429,16 @@ export default function Home() {
 
           {/* Footer */}
           <footer className="footer">
-            <div className="footer-logo">⚡ GHAIZERS 2.0</div>
-            <div className="footer-by">Made with 💚 by <strong style={{color:"var(--green)"}}>ghaa</strong> (KhaizenNomazen)</div>
-            <div className="footer-free">🆓 Tool ini GRATIS selamanya — Jangan bayar siapapun untuk ini!</div>
+            <div className="footer-logo">⚡ OPTIMIZER 1.0</div>
+            <div className="footer-by">Made by <strong style={{color:"var(--green)"}}>Kolaa</strong> (KhaizenNomazen)</div>
+            <div className="footer-free">🆓 Tool ini BAYAR — Jangan beli dari siapapun kecuali dari Kolaa!</div>
             <div className="footer-legal">
               ⚖️ Menjual tool ini = Pelanggaran UU Hak Cipta No. 28/2014<br/>
               Pidana max 10 tahun · Denda max Rp 4.000.000.000
             </div>
             <a href="https://github.com/KhaizenNomazen" target="_blank" rel="noopener noreferrer"
               style={{display:"block",color:"var(--green)",fontSize:12,marginBottom:16}}>
-              🔗 github.com/KhaizenNomazen
+              🔗 github.com/Kolaaa2
             </a>
             <div style={{display:"flex",justifyContent:"center",gap:12,marginBottom:16,flexWrap:"wrap"}}>
               {[["docs","📚 Docs"],["faq","❓ FAQ"],["changelog","📋 Changelog"]].map(([page,label])=>(
