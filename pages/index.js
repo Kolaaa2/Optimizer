@@ -1344,21 +1344,10 @@ export default function Home() {
                 {/* Fase 4: Share */}
                 <ShareResults summary={summary}/>
                 <p style={{textAlign:"center",fontSize:12,color:"var(--text-muted)",marginTop:16}}>
-                  ✅ <code>optimize_file.zip</code> sudah ter-download · Credit ghaa sudah diinjeksi
+                  ✅ <code>optimize_file.zip</code> sudah ter-download · Credit kolaa sudah diinjeksi
                 </p>
               </div>
             )}
-
-            {/* Fase 4: Badge Generator */}
-            <div className="glass-section">
-              <div className="sec-header">
-                <div className="sec-number" style={{background:"linear-gradient(135deg,#8b5cf6,#6d28d9)"}}>🏷️</div>
-                <div><div className="sec-title">Badge Generator</div><div className="sec-sub">Tambahkan badge 'Optimized with Ghaizers' ke README pack kamu</div></div>
-              </div>
-              <BadgeGenerator/>
-            </div>
-
-          </div>{/* /optimizer-wrap */}
 
           {/* Sticky button */}
           <div className="optimize-btn-wrap">
