@@ -1392,4 +1392,10 @@ export default function Home() {
             <div className="footer-tech">
               IHDR Skip · Web Workers · OGG Safe · Alpha Cleanup · Single-Color · Pow2 · Deep JSON · JSON Sort · .lang · .bbmodel · Shader Minify · SHA-1 · Pack Analyzer · Badge Gen
             </div>
-          </footer>
+           </footer>
+
+        </>)}
+
+    </>
+  );
+}
