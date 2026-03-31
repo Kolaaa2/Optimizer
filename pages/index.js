@@ -21,7 +21,7 @@ const CREDIT_TXT = `============================================================
 Tool ini GRATIS. Menjual = pelanggaran UU Hak Cipta No.28/2014.
 Lapor: github.com/Kolaaa2
 ================================================================`;
-const CREDIT_MCMETA_DESC = "§cDilarang Dijual! §r| Optimizer by §akolaa §7(OwTennnn)";
+const CREDIT_MCMETA_DESC = "§cDilarang Dijual! §r| Optimizer by §aKolaa/OwTennnn";
 
 /* ─────────────────────────────────────────
    MODES
