@@ -10,7 +10,7 @@
                        1.0
 ```
 
-### ⚡ Minecraft Resource Pack Optimizer — 100% Free, 100% Client-Side
+### ⚡ Minecraft Resource Pack Optimizer — 100% Client-Side
 
 <br/>
 
