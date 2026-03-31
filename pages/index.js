@@ -950,12 +950,11 @@ export default function Home() {
         outZip.file(name,await entry.async("arraybuffer"));tick();
       }
 
-      outZip.file("GHAIZERS_CREDIT.txt",CREDIT_TXT);
-      outZip.file("JANGAN_BAYAR_INI.txt","⚠️ Tool Ghaizers2.0 ini GRATIS!\nJika kamu membayar → kamu DITIPU!\nLapor: github.com/KhaizenNomazen\nMenjual = UU Hak Cipta No.28/2014");
+      outZip.file("CREDIT.txt",CREDIT_TXT);
       appendLog("Credit injected ✔");
       if(iconFile){appendLog("Override pack.png...");outZip.file("pack.png",await buildPackIcon(iconFile));}
       appendLog("Menyusun ZIP...");
-      const blob=await outZip.generateAsync({type:"blob",compression:"DEFLATE",compressionOptions:{level:Math.max(1,Math.min(9,zipCompressionLevel))},comment:"Optimized by Ghaizers2.0 | (c) ghaa | GRATIS | github.com/KhaizenNomazen"});
+      const blob=await outZip.generateAsync({type:"blob",compression:"DEFLATE",compressionOptions:{level:Math.max(1,Math.min(9,zipCompressionLevel))},comment:"Optimized by Kolaa/OwTennnn"});
       const sha1=await sha1HexFromBlob(blob);
       if(sha1)appendLog(`SHA-1: ${sha1}`);
       appendLog("Selesai ✔ Download dimulai...");
